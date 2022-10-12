@@ -3,14 +3,23 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+
+        mavenLocal()
+        mavenCentral()
+        jcenter()
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+
+        mavenLocal()
+        mavenCentral()
+        jcenter()
     }
 }
+
 rootProject.name = "java-aop"
-include ':app',':third-part'
+include ':app',':third-part',':hook',':plugin'
